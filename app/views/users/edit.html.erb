@@ -10,7 +10,7 @@
           <% if @user.errors.count == 1 %>
             1 error prohibited this obj from being saved:
           <% else %>
-            2 errors prohibited this obj from being saved:
+            <%= @user.errors.count %> errors prohibited this obj from being saved:
           <% end %>
           </h3>
           <ul>
