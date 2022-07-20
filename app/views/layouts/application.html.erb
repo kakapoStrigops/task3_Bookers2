@@ -82,7 +82,7 @@
 
     <main>
     <% flash.each do |message_type, message| %>
-　　  <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <p id="<%= message_type %>"><%= message %></p>
     <% end %>
     <%= yield %>
     </main>
